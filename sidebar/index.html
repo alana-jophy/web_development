@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+        }
+       .myDiv {
+            background-color: green;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        
+        .myDiv a {
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .myDiv a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-left: 200px;
+            width: calc(100% - 200px);
+            height: 100vh;
+            border: none;
+            
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="myDiv">
+        <a href="images.html" target="frame">About</a><br><br>
+        <a href="bulb_glow/index.html" target="frame">Home</a>
+    </div>
+    <div class="content">
+        <iframe src="images.html" name="frame"></iframe>
+    </div>
+</body>
+</html>
