@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#form {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: beige;
+    color: rgb(255, 94, 0);
+}
+
+table {
+    border: 2px solid black;
+}
+
+td {
+    padding: 10px 15px;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto;
+    border-radius: 5vh;
+}
+

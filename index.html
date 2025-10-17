@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <table>
+            <tr>
+                <td>FIRST NAME</td>
+                <td>
+                    <input type="text" id="fname" name="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td>
+                    <input type="text" id="fname" name="lname">
+                </td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>
+                    <input type="date" id="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>PHONE NO</td>
+                <td>
+                    <input type="text" id="phone" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td>PASSWORD</td>
+                <td>
+                    <input type="password" id="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>COURSES APPLIED</td>
+                <td>
+                    <input type="radio" id="mca" value="MCA" name="courses">
+                    <label for="mca">MCA</label>
+                    <input type="radio" id="mtech" value="M.Tech" name="courses">
+                    <label for="mtech">M.Tech</label>
+                    <input type="radio" id="phd" value="PhD" name="courses">
+                    <label for="PhD">PhD</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <button type="submit" id="submit" name="submit">SUBMIT</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
