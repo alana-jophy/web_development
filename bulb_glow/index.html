@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button type="button" id="b1">Turn on</button>
+        <img id="img" src="https://www.seekpng.com/png/detail/672-6727141_light-bulb-off.png" height="300px" width="300px">
+        <button type="button" id="b2">Turn off</button>
+    </div>
+
+    <script>
+        const image = document.getElementById('img')
+        document.getElementById('b1').addEventListener("click", function() {
+            image.src="https://static.vecteezy.com/system/resources/thumbnails/052/646/678/small_2x/yellow-bulb-shines-on-plain-background-transparent-png.png"
+        })
+
+        document.getElementById('b2').addEventListener("click", function() {
+            image.src="https://www.seekpng.com/png/detail/672-6727141_light-bulb-off.png"
+        
+        })
+    </script>
+
+</body>
+</html>
