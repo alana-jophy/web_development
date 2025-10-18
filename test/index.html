@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox" id="mango" value="Mango" name="fruits">
+        <label for="Mango">Mango</label><br>
+        <input type="checkbox" id="orange" value="Orange" name="fruits">
+        <label for="Orange">Orange</label><br><br>
+        <button type="button" id="b1" name="submit">Add to Cart</button>
+        <p id="result"></p>
+
+    </div>
+    <script>
+        const fruits = document.getElementsByName('fruits')
+        let choice = confirm("Click add to cart");
+        if(choice) {
+            alert("")
+        }
+        document.getElementById('b1').addEventListener("click", function() {
+            let selected_items = []
+            for(let i = 0; i < fruits.length; i++) {
+                if(fruits[i].checked) {
+                    selected_items.push(fruits[i].value);
+                }
+            }
+            document.getElementById('result').textContent = selected_items.join(", ")
+
+        })
+    </script>
+</body>
+</html>

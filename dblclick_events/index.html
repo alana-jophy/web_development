@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="myDiv">
+        <button type="button" id="b1" name="Click Me!">Click Me</button>
+    </div>
+    <script>
+        document.getElementById('b1').addEventListener("click", function() {
+            document.body.style.backgroundColor = "red"
+        })
+        document.getElementById('b1').addEventListener("dblclick", function() {
+            document.body.style.backgroundColor = "green"
+        })
+    </script>
+</body>
+</html>
